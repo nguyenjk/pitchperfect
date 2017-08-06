@@ -12,7 +12,8 @@
 		C50E4E3B1F285E1D00B7E098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E4E391F285E1D00B7E098 /* Main.storyboard */; };
 		C50E4E3D1F285E1D00B7E098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50E4E3C1F285E1D00B7E098 /* Assets.xcassets */; };
 		C50E4E401F285E1D00B7E098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E4E3E1F285E1D00B7E098 /* LaunchScreen.storyboard */; };
-		C50E4E4A1F2B256600B7E098 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50E4E491F2B256600B7E098 /* PlaySoundViewController.swift */; };
+		C50E4E4A1F2B256600B7E098 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50E4E491F2B256600B7E098 /* PlaySoundsViewController.swift */; };
+		C53F20831F359C13007586B3 /* PlaySoundsViewcontroller+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F20821F359C13007586B3 /* PlaySoundsViewcontroller+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		C50E4E3C1F285E1D00B7E098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50E4E3F1F285E1D00B7E098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50E4E411F285E1D00B7E098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C50E4E491F2B256600B7E098 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
+		C50E4E491F2B256600B7E098 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		C53F20821F359C13007586B3 /* PlaySoundsViewcontroller+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewcontroller+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,8 @@
 				C50E4E3C1F285E1D00B7E098 /* Assets.xcassets */,
 				C50E4E3E1F285E1D00B7E098 /* LaunchScreen.storyboard */,
 				C50E4E411F285E1D00B7E098 /* Info.plist */,
-				C50E4E491F2B256600B7E098 /* PlaySoundViewController.swift */,
+				C50E4E491F2B256600B7E098 /* PlaySoundsViewController.swift */,
+				C53F20821F359C13007586B3 /* PlaySoundsViewcontroller+Audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -141,7 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C50E4E381F285E1D00B7E098 /* RecordSoundViewController.swift in Sources */,
-				C50E4E4A1F2B256600B7E098 /* PlaySoundViewController.swift in Sources */,
+				C53F20831F359C13007586B3 /* PlaySoundsViewcontroller+Audio.swift in Sources */,
+				C50E4E4A1F2B256600B7E098 /* PlaySoundsViewController.swift in Sources */,
 				C50E4E361F285E1D00B7E098 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +312,7 @@
 				C50E4E461F285E1D00B7E098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

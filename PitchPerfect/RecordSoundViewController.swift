@@ -26,7 +26,8 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-
+    
+    // MARK: -record audio and save the audio to the file name recordedVoice.wav
     @IBAction func recordAudio(_ sender: Any) {
         recordingLabel.text = "Recording in Progress"
         stopRecordButton.isEnabled = true
@@ -46,7 +47,8 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
     }
-
+    
+    // MARK: stop recording to and send the audio
     @IBAction func stopRecording(_ sender: Any) {
         print("stop recording button press")
         stopRecordButton.isEnabled = false
@@ -58,17 +60,17 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         try! audioSession.setActive(false)
     }
     
+    // MARK: handler for finishing recording. This function will check if the record audio successfully, then it will send to seque the url.
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
-        } else {
-            print ("recording continue")
         }
     }
     
+    // MARK: prepare function to send the recorded file url to other view controller.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "stopRecording" {
-            let playSoundsVC = segue.destination as! PlaySoundViewController
+            let playSoundsVC = segue.destination as! PlaySoundsViewController
             let recordedAudioURL = sender as! URL
             playSoundsVC.recordedAudioURL = recordedAudioURL
         }
